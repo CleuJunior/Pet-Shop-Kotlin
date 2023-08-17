@@ -1,4 +1,4 @@
-package com.cleonildo.petshop.br.Pet.Shop
+package com.cleonildo.petshop.br.pet.shop
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

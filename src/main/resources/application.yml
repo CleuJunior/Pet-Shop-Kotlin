@@ -1,0 +1,9 @@
+server:
+  port: 8000
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:root@localhost:27017/pet-shop
+      auto-index-creation: true
+      database: pet-shop
