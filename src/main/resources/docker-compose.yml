@@ -4,9 +4,9 @@ services:
     container_name: mongo_sb_container
     image: mongo
     restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
+#    environment:
+#      MONGO_INITDB_ROOT_USERNAME: root
+#      MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
       - mongodb-data:/var/lib/mongodb
     ports:

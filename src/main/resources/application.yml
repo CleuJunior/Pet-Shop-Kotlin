@@ -4,6 +4,9 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://root:root@localhost:27017/pet-shop
-      auto-index-creation: true
-      database: pet-shop
+      uri: mongodb://localhost:27017/pet_shop
+      database: pet_shop
+
+logging:
+  level:
+    org.springframework.data.mongodb.core: DEBUG
