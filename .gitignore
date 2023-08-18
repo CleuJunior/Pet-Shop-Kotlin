@@ -1,37 +1,65 @@
-HELP.md
-.gradle
+# Gradle
+.gradle/
 build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### STS ###
-.apt_generated
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse
 .classpath
-.factorypath
 .project
-.settings
-.springBeans
-.sts4-cache
+.settings/
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+target/
 
-### IntelliJ IDEA ###
-.idea
+# Compiled Kotlin
+*.class
+
+# Logs
+*.log
+
+# Gradle Wrapper Batch Script
+gradlew.bat
+gradlew
+
+# Gradle Wrapper
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+
+
+# Spring Boot
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Generated files
+build/
+out/
+
+# Local configuration
+application.yml
+application.properties
+
+# IDE files
+.vscode/
+.idea/
+*.ipr
 *.iws
 *.iml
-*.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+gen/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# macOS
+.DS_Store
 
-### VS Code ###
-.vscode/
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Compiled Java class files
+*.class
+
+# Compiled Kotlin files
+*.kotlin compiled
