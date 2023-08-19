@@ -6,6 +6,7 @@ plugins {
 	id 'org.jetbrains.kotlin.jvm' version '1.7.22'
 	id 'org.jetbrains.kotlin.plugin.spring' version '1.7.22'
 	id 'org.jetbrains.kotlin.plugin.jpa' version '1.7.22'
+	id 'jacoco'
 }
 
 group = 'com.cleonildo.petshop.br'
@@ -45,4 +46,11 @@ tasks.withType(KotlinCompile).configureEach {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+test {
+	finalizedBy jacocoTestReport // report is always generated after tests run
+}
+jacocoTestReport {
+	dependsOn test // tests are required to run before generating the report
 }
